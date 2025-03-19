@@ -1,0 +1,35 @@
+{
+  "name": "Alia Extension MAX",
+  "description": "A Chrome Extension by me, Alia. Follow me on GitHub (AbnormalNormality)!",
+
+  "manifest_version": 3,
+  "version": "1.0",
+
+  "permissions": ["activeTab"],
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Alia"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.compass.education/Records/UserNew.aspx*"
+      ],
+      "js": ["assets/compass.js"]
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["assets/global.js"]
+    },
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": ["assets/google.js"]
+    }
+  ]
+}

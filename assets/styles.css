@@ -1,0 +1,37 @@
+:root {
+  --background-color: #edf2fa;
+
+  --color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #282828;
+
+    --color: #fff;
+  }
+}
+
+* {
+  font-size: 1.1em;
+}
+
+html {
+  width: 300px;
+  height: 100px;
+  background-color: var(--color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
