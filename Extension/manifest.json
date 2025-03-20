@@ -14,21 +14,15 @@
 
   "content_scripts": [
     {
-      "matches": [
-        "https://*.compass.education/Records/UserNew.aspx*"
-      ],
+      "matches": ["https://*.compass.education/Records/UserNew.aspx*"],
       "js": ["assets/compass.js"]
     },
     {
-      "matches": [
-        "*://*/*"
-      ],
+      "matches": ["*://*/*"],
       "js": ["assets/global.js"]
     },
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
+      "matches": ["https://www.google.com/search*"],
       "js": ["assets/google.js"]
     }
   ]
